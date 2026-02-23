@@ -66,7 +66,7 @@ make
 Binary produced:
 
 ```
-cedit
+./dist/cedit
 ```
 
 ---
@@ -74,7 +74,7 @@ cedit
 ## Run
 
 ```bash
-./cedit filename.txt
+./dist/cedit filename.txt
 ```
 
 ---
