@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
       (strcmp(argv[1], "--version") == 0 ||
        strcmp(argv[1], "-v") == 0))
   {
-    printf("%s\n", CEDIT_VERSION);
+    printf("v%s\n", CEDIT_VERSION);
     return 0;
   }
 
