@@ -4,10 +4,12 @@
 #include "render.h"
 #include "status.h"
 #include "terminal.h"
+#include "version.h"
 
 #include <assert.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 EditorState *GLOBAL_E = NULL;
 
@@ -17,6 +19,14 @@ int main(int argc, char *argv[])
   {
     printf("Usage: %s <filename>", argv[0]);
     return 1;
+  }
+
+  if (argc == 2 &&
+      (strcmp(argv[1], "--version") == 0 ||
+       strcmp(argv[1], "-v") == 0))
+  {
+    printf("%s\n", CEDIT_VERSION);
+    return 0;
   }
 
   EditorState E;
