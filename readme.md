@@ -5,6 +5,8 @@ The goal of this project is learning — understanding how applications are buil
 
 This is an educational project, not a production editor.
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5ef99a2b-e6f3-473d-a847-4a0ecad1fa59" />
+
 ---
 
 ## Purpose
