@@ -9,6 +9,87 @@ This is an educational project, not a production editor.
 
 ---
 
+## Installation
+
+### Linux (Binary Install – Recommended)
+
+This will download and install the latest release for your architecture.
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Avinash-sord12k/cedit/main/scripts/install.sh | bash
+```
+
+After installation:
+
+```bash
+cedit filename.txt
+```
+
+---
+
+### Other Platforms / Unsupported Architectures
+
+If your OS or architecture is not supported by the binary installer, build from source.
+
+#### Option 1: Use Source Install Script
+
+```bash
+git clone https://github.com/Avinash-sord12k/cedit
+cd cedit
+./scripts/source-install.sh
+```
+
+---
+
+#### Option 2: Manual Build
+
+```bash
+git clone https://github.com/Avinash-sord12k/cedit
+cd cedit
+
+make
+sudo cp dist/cedit /usr/local/bin/cedit
+```
+
+Then run:
+
+```bash
+cedit filename.txt
+```
+
+---
+
+
+## Upgrade
+
+Re-running the install command will automatically:
+
+- Detect the installed version  
+- Compare with the latest release  
+- Upgrade if necessary  
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Avinash-sord12k/cedit/main/scripts/install.sh | bash
+```
+
+---
+
+## Uninstall
+
+To remove `cedit` from your system:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Avinash-sord12k/cedit/main/scripts/install.sh | bash -s uninstall
+```
+
+Or manually:
+
+```bash
+sudo rm /usr/local/bin/cedit
+```
+
+---
+
 ## Purpose
 
 This project exists to explore:
@@ -57,43 +138,6 @@ This is intentionally minimal. Many things are not implemented yet:
 * Rendering is still simple and not optimized
 * ASCII-only editing
 
----
-
-## Build
-
-```bash
-make
-```
-
-Binary produced:
-
-```
-./dist/cedit
-```
-
----
-
-## Run
-
-```bash
-./dist/cedit filename.txt
-```
-
----
-
-## Install Globally (optional)
-
-If you have an install script:
-
-```bash
-./scripts/install.sh
-```
-
-Then run:
-
-```bash
-cedit filename.txt
-```
 ---
 
 ## Notes
